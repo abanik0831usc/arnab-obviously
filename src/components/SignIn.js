@@ -16,7 +16,7 @@ export default function SignIn() {
       <MdPeopleAlt size={36} />
 
       <h1 className="title">Sign In</h1>
-      <p className="subtitle">Welcome back! Let's get started with AI</p>
+      <p className="subtitle">{`Welcome back! Let's get started with AI`}</p>
       <div className="signin-card">
         <input type="email" placeholder="Enter your email" className="input-field" />
         <input type="password" placeholder="Create a password" className="input-field" />
@@ -31,7 +31,7 @@ export default function SignIn() {
           Sign up with LinkedIn
         </button>
       </div>
-      <p className="footer">Don't have an account? <a className="footer-link" onClick={handleSignIn}>Sign up</a></p>
+      <p className="footer">{`Don't have an account?`} <a className="footer-link" onClick={handleSignIn}>Sign up</a></p>
     </div>
   );
 }
