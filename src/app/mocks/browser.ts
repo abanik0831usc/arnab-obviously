@@ -19,3 +19,5 @@ if (typeof window !== 'undefined') {
       console.error('Error importing msw/browser for MSW:', error)
     );
 }
+
+export {};
