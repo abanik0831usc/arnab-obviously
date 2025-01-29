@@ -22,7 +22,7 @@ export default function SignIn() {
         <input type="password" placeholder="Create a password" className="input-field" />
         <button onClick={handleSignIn} className="signin-button">Sign In</button>
         <div className="divider">OR</div>
-        <button onClick={handleSignIn} className="social-button google-button">
+      <button onClick={handleSignIn} className="social-button google-button">
           <img src="Icons/google.png" alt="Google Logo" className="social-logo" />
           Sign up with Google
         </button>

@@ -22,6 +22,7 @@ export default function RootLayout({
   useEffect(() => {
     const initMSW = async () => {
       try {
+        // Check if MSW should be enabled (can be controlled via env variable)
         const enableMSW = process.env.NEXT_PUBLIC_ENABLE_MSW === 'true';
         
         if (enableMSW) {
@@ -29,7 +30,7 @@ export default function RootLayout({
           const { worker } = await import('./mocks/browser');
           
           await worker.start({
-            onUnhandledRequest: 'bypass'
+            onUnhandledRequest: 'bypass',
             serviceWorker: {
               url: '/mockServiceWorker.js',
               options: {
