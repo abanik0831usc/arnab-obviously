@@ -84,6 +84,18 @@ body {
   text-align: center;
   font-size: 14px;
   color: #999;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #E4E7EC;
+  margin: 0 10px;
 }
 
 .footer {

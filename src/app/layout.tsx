@@ -20,7 +20,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   useEffect(() => {
-    console.log('MSW Initialization starting...', process.env.NODE_ENV);
     import('./mocks/browser');
   }, []);
 
